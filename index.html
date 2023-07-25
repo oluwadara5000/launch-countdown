@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/1d29cd001d.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+
+  <style>
+    .attribution {
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding-bottom: 40px;
+      font-family: "Red Hat Text";
+    }
+
+    .attribution a {
+      color: hsl(345, 95%, 68%);
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="upper"></div>
+    <h1>WE'RE LAUNCHING SOON</h1>
+    <div class="container">
+      <div class="container-segment">
+        <div class="segment">
+          <div class="flip-card" data-days-tens>
+            <div id="top-days-tens" class="top"></div>
+            <div id="bottom-days-tens" class="bottom"></div>
+          </div>
+
+          <div class="flip-card" data-days-ones>
+            <div id="top-days-ones" class="top"></div>
+            <div id="bottom-days-ones" class="bottom"></div>
+          </div>
+        </div>
+        <div class="segment-title">DAYS</div>
+      </div>
+
+      <div class="container-segment">
+        <div class="segment">
+          <div class="flip-card" data-hours-tens>
+            <div id="top-hours-tens" class="top"></div>
+            <div id="bottom-hours-tens" class="bottom"></div>
+          </div>
+
+          <div class="flip-card" data-hours-ones>
+            <div id="top-hours-ones" class="top"></div>
+            <div id="bottom-hours-ones" class="bottom"></div>
+          </div>
+        </div>
+        <div class="segment-title">HOURS</div>
+      </div>
+
+      <div class="container-segment">
+        <div class="segment">
+          <div class="flip-card" data-minutes-tens>
+            <div id="top-minutes-tens" class="top"></div>
+            <div id="bottom-minutes-tens" class="bottom"></div>
+          </div>
+
+          <div class="flip-card" data-minutes-ones>
+            <div id="top-minutes-ones" class="top"></div>
+            <div id="bottom-minutes-ones" class="bottom"></div>
+          </div>
+        </div>
+        <div class="segment-title">MINUTES</div>
+      </div>
+
+      <div class="container-segment">
+        <div class="segment">
+          <div class="flip-card" data-seconds-tens>
+            <div id="top-seconds-tens" class="top"></div>
+            <div id="bottom-seconds-tens" class="bottom"></div>
+          </div>
+
+          <div class="flip-card" data-seconds-ones>
+            <div id="top-seconds-ones" class="top"></div>
+            <div id="bottom-seconds-ones" class="bottom"></div>
+          </div>
+        </div>
+        <div class="segment-title">SECONDS</div>
+      </div>
+    </div>
+    <div class="lower">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-pinterest"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/oluwadara5000">Odejobi Oluwadara</a>.
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

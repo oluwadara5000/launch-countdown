@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+html,
+body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 1440px;
+  margin: auto;
+  background-image: url(/images/bg-stars.svg);
+  background-color: #231d2b;
+}
+
+.upper {
+  width: 100%;
+  height: 128px;
+  background-color: hsl(235, 16%, 14%);
+  background-image: url(/images/bg-stars.svg);
+  background-size: cover;
+}
+
+.lower {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  height: 150px;
+  background-image: url(/images/pattern-hills.svg);
+  align-items: center;
+}
+
+.lower i {
+  color: hsl(237, 18%, 59%);
+  font-size: 25px;
+}
+
+.lower i:hover {
+  color: hsl(345, 95%, 68%);
+}
+
+section h1 {
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 12px;
+  margin-bottom: 105px;
+  font-family: "Red Hat Text";
+  color: #ffffff;
+}
+
+.flip-card {
+  display: inline-flex;
+  flex-direction: column;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.1em;
+  position: relative;
+  font-family: "Red Hat Text";
+  color: hsl(345, 95%, 68%);
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.top,
+.bottom,
+.flip-card .top-flip,
+.flip-card .bottom-flip {
+  height: 0.75em;
+  line-height: 1;
+  padding: 0.25em;
+  overflow: hidden;
+}
+
+#top-days-tens,
+#bottom-days-tens,
+#top-hours-tens,
+#bottom-hours-tens,
+#top-minutes-tens,
+#bottom-minutes-tens,
+#top-seconds-tens,
+#bottom-seconds-tens {
+  border-top-left-radius: 0.1em;
+  border-bottom-left-radius: 0.1em;
+}
+
+#top-days-ones,
+#bottom-days-ones,
+#top-hours-ones,
+#bottom-hours-ones,
+#top-minutes-ones,
+#bottom-minutes-ones,
+#top-seconds-ones,
+#bottom-seconds-ones {
+  border-top-right-radius: 0.1em;
+  border-bottom-right-radius: 0.1em;
+}
+
+.top,
+.flip-card .top-flip {
+  background-color: #2c2c44;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottom,
+.flip-card .bottom-flip {
+  background-color: #34364f;
+  display: flex;
+  align-items: flex-end;
+}
+
+.flip-card .top-flip {
+  position: absolute;
+  width: 100%;
+  animation: flip-top 250ms ease-in;
+  transform-origin: bottom;
+}
+
+@keyframes flip-top {
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+.flip-card .bottom-flip {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: flip-bottom 250ms ease-out 250ms;
+  transform-origin: top;
+  transform: rotateX(90deg);
+}
+
+@keyframes flip-bottom {
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.container {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.container-segment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  align-items: center;
+}
+
+.segment {
+  display: flex;
+}
+
+.segment-title {
+  font-size: 1rem;
+  font-family: "Red Hat Text";
+  color: hsl(237, 18%, 59%);
+  margin-top: 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* MEDIA QUERIES */
+/* FOR SCREENS 374px and BELOW */
+@media screen and (max-width: 374px) {
+  section {
+    width: 100%;
+  }
+
+  section h1 {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 1.5em;
+  }
+
+  .upper {
+    height: 45px;
+  }
+
+  .segment-title {
+    margin-top: 0;
+  }
+
+  .lower {
+    height: 75px;
+  }
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 375px TO 480px */
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  section {
+    width: 98%;
+  }
+
+  section h1 {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 1.5em;
+  }
+
+  .upper {
+    height: 45px;
+  }
+
+  .segment-title {
+    margin-top: 0;
+  }
+
+  .lower {
+    height: 75px;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 481px TO 600px */
+
+@media screen and (min-width: 481px) and (max-width: 1439px) {
+  section {
+    width: 98%;
+    padding: 0 15px;
+  }
+
+  section h1 {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .upper {
+    height: 45px;
+  }
+
+  .segment-title {
+    margin-top: 0;
+  }
+
+  .lower {
+    height: 75px;
+  }
+}
