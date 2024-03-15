@@ -1,4 +1,4 @@
-const countToDate = new Date("January 1, 2024 00:01:01").getTime();
+const countToDate = new Date("January 1, 2025 00:01:01").getTime();
 let previousTimeBetweenDates;
 setInterval(() => {
   const currentDate = new Date();
@@ -12,7 +12,7 @@ function flipAllCards(time) {
   let seconds = time % 60;
   let minutes = Math.floor(time / 60) % 60;
   let hours = Math.floor(time / 3600) % 24;
-  let days = Math.floor(time / 86400) % 200;
+  let days = Math.floor(time / 86400) % 300;
 
   flip(document.querySelector("[data-days-tens]"), Math.floor(days / 10));
   flip(document.querySelector("[data-days-ones]"), days % 10);
